@@ -27,10 +27,10 @@ python imputation.py --data_path='./dataset/ecg_mitbih_test.csv' \
 - KNN Imputation [[description]](https://scikit-learn.org/stable/modules/generated/sklearn.impute.KNNImputer.html)
 ```Python
 # Sample Usage
-python imputation.py --data_path='./dataset/ecg_mitbih_test.csv' \
-                     --option='knn' \
-                     --n_neighbors=5 \
-                     --output_path='./dataset/imputed_data/ecg_mitbih_test_imputed.csv'
+python seasonal_trend_decomposition.py --data_path='./dataset/ecg_mitbih_test.csv' \
+                                       --option='knn' \
+                                       --n_neighbors=5 \
+                                       --output_path='./dataset/imputed_data/ecg_mitbih_test_imputed.csv'
 ```
 - MICE Imputation [[description]](https://scikit-learn.org/stable/modules/generated/sklearn.impute.IterativeImputer.html#sklearn-impute-iterativeimputer)
 ```Python
