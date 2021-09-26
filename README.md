@@ -50,3 +50,20 @@ python imputation.py --data_path='./dataset/ecg_mitbih_test.csv' \
                      --output_path='./dataset/imputed_data/ecg_mitbih_test_imputed.csv'
                      --test_module
 ```
+
+### 2.2 Seasonal Trend Decomposition and Prediction (STL)
+#### 2.2.1 Seasonal Trend Detection using Seasonal-Trend LOESS (STL)
+```
+- STL Decomposition [[description]](https://www.statsmodels.org/stable/generated/statsmodels.tsa.seasonal.DecomposeResult.html#statsmodels.tsa.seasonal.DecomposeResult)
+```Python
+
+#### 2.2.1 Diagnosis of Patterns in Time-Series data
+```
+- Auto Arima [[description]](https://alkaline-ml.com/pmdarima/modules/generated/pmdarima.arima.auto_arima.html)
+```Python
+
+# Sample Usage
+python imputation.py --data_path='./dataset/machine_temperature_system_failure.csv' \
+                     --seasonal_output_path='./dataset/decomposed_data/seasonal_decomposed.csv'
+                     --trend_output_path='./dataset/decomposed_data/trend_decomposed.csv'
+```
