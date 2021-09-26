@@ -13,8 +13,8 @@ from pmdarima.arima import auto_arima
 
 parser = argparse.ArgumentParser(description='Temporal One-class Anomaly Detection')
 parser.add_argument('--data_path', type=str, default='./dataset/machine_temperature_system_failure.csv')
-parser.add_argument('--seasonal_output_path', type=str, default='./dataset/seasonal_decomposed.csv')
-parser.add_argument('--trend_output_path', type=str, default='./dataset/trend_decomposed.csv')
+parser.add_argument('--seasonal_output_path', type=str, default='./decomposed_data/seasonal_decomposed.csv')
+parser.add_argument('--trend_output_path', type=str, default='./decomposed_data/trend_decomposed.csv')
 
 class DataDecomposer():
     def __init__(self, data_path):
