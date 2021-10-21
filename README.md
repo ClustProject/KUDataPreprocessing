@@ -15,7 +15,7 @@
 ### 2.1 Missing Value (NA) Imputation
 #### 2.1.1 Supported Options & Sample Usage
 Impute the missing values in a dataset and save the result.
-- Simple Imputation with `mean, median, most_frequent, constant` value [[description]](https://scikit-learn.org/stable/modules/generated/sklearn.impute.IterativeImputer.html#sklearn.impute.IterativeImputer)
+- Simple Imputation with `mean, median, most_frequent, constant` value [[description]](https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html)
 ```Python
 # Sample Usage
 python imputation.py --data_path='./dataset/ecg_mitbih_test.csv' \
