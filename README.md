@@ -37,6 +37,7 @@ python seasonal_trend_decomposition.py --data_path='./dataset/ecg_mitbih_test.cs
 # Sample Usage
 python imputation.py --data_path='./dataset/ecg_mitbih_test.csv' \
                      --option='mice' \
+                     --strategy='mean' \
                      --output_path='./dataset/imputed_data/ecg_mitbih_test_imputed.csv'
 ```
 #### 2.1.2 Testing imputation module by adding random NAs to temporary dataset.

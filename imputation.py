@@ -88,10 +88,10 @@ class DataImputer():
         
         return imputed_dataset
     
-    def MICEImputer(self):
+    def MICEImputer(self, initial_strategy):
         """ sklearn MICE imputer. """
         # https://scikit-learn.org/stable/modules/generated/sklearn.impute.IterativeImputer.html#sklearn-impute-iterativeimputer
-        imputer = IterativeImputer(random_state=0)
+        imputer = IterativeImputer(random_state=0, initial_strategy=initial_strategy, sample_posterior=True)
         imputed_dataset = imputer.fit_transform(self.dataset)
         imputed_dataset = pd.DataFrame(imputed_dataset, columns=self.dataset.columns)
         
@@ -116,9 +116,10 @@ def main(args):
         imputed_dataset = dataImputer.KNNImputer(n_neighbors=args.n_neighbors)
     elif args.option == 'mice':
         print(f'Processing MICE imputation')
-        imputed_dataset = dataImputer.MICEImputer()
+        imputed_dataset = dataImputer.MICEImputer(initial_strategy=args.strategy)
         
     imputed_dataset.to_csv(args.output_path, mode='w', index=False, header=False)
+    print(f'Done {args.option} imputation')
     
 if __name__ == '__main__':
     args = parser.parse_args()
