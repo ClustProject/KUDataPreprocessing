@@ -65,3 +65,17 @@ python imputation.py --data_path='./dataset/machine_temperature_system_failure.c
                      --seasonal_output_path='./dataset/decomposed_data/seasonal_decomposed.csv'
                      --trend_output_path='./dataset/decomposed_data/trend_decomposed.csv'
 ```
+
+### 2.3 Synchronization using DTW and soft-DTW
+- DTW
+- soft-DTW [[description]](https://tslearn.readthedocs.io/en/stable/gen_modules/metrics/tslearn.metrics.soft_dtw.html)
+```Python
+
+# Sample Usage
+python synchronization.py --data_path='./dataset/power_voltage.csv' \
+                    --dtw_output_path='./dataset/synchronized_data/synchronized_dtw.csv'\
+                     --plot_output_path='./dataset/synchronized_data'\
+                     --option='dtw'\
+                     --distance=2
+
+
