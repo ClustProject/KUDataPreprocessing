@@ -73,9 +73,9 @@ python imputation.py --data_path='./dataset/machine_temperature_system_failure.c
 
 # Sample Usage
 python synchronization.py --data_path='./dataset/power_voltage.csv' \
-                    --dtw_output_path='./dataset/synchronized_data/synchronized_dtw.csv'\
-                     --plot_output_path='./dataset/synchronized_data'\
-                     --option='dtw'\
-                     --distance=2
+                          --dtw_output_path='./dataset/synchronized_data/synchronized_dtw.csv'\
+                          --plot_output_path='./dataset/synchronized_data'\
+                          --option='dtw'\
+                          --distance=2
 
 
