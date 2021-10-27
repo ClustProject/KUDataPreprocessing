@@ -5,9 +5,16 @@
 .
 ├── dataset
 │   ├── ecg_mitbih_test.csv
-│   └── imputed_data
-│       └── ecg_mitbih_test_imputed.csv
+│   ├── imputed_data
+│   │   └── ecg_mitbih_test_imputed.csv
+│   ├── decomposed_data
+│   │   ├── ecg_mitbih_test_imputed.csv
+│   │   └── trend_decomposed.csv
+│   └── synchronized_data
+│       └── synchronized_dtw.csv
 ├── imputation.py
+├── seasonal_trend_decomposition.py
+├── synchronization.py
 └── README.md
 ```
 
