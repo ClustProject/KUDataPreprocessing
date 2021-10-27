@@ -67,7 +67,7 @@ python imputation.py --data_path='./dataset/machine_temperature_system_failure.c
 ```
 
 ### 2.3 Synchronization using DTW and soft-DTW
-- DTW
+- DTW [[description]](https://tslearn.readthedocs.io/en/stable/gen_modules/metrics/tslearn.metrics.dtw.html)
 - soft-DTW [[description]](https://tslearn.readthedocs.io/en/stable/gen_modules/metrics/tslearn.metrics.soft_dtw.html)
 ```Python
 
